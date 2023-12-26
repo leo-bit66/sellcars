@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/sellcars/frontend/css/customers-styles.css">
+    <link rel="icon" href="/sellcars/frontend/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <title>SellCars - Customers Page</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+            <img src="/sellcars/frontend/logo.png" alt="Logo">
+        </div>
+        <div class="customer-info">
+            <p>Customer Name: <span id="customerNamePlaceholder"></span></p>
+            <p>Last Login: <span id="lastLoginPlaceholder"></span></p>
+        </div>
+        <div class="customer-uploads">
+            <h3>Customer CSV Uploads</h3>
+            <button id="uploadCustomerBtn">Upload Customer</button>
+            <button id="uploadContactPersonsBtn">Upload Contact Persons</button>
+            <button id="uploadAddressesBtn">Upload Addresses</button>
+            <input type="file" id="fileInput" accept=".csv" style="display: none">
+            <div id="messageContainer"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Customers</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by all columns">
+        </div>
+        <table id="customers-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Company</th>
+                    <th>Country</th>
+                    <th>Zip/City</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- JavaScript to insert customer data rows -->
+            </tbody>
+        </table>
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <label class="edit-heading">Edit Customer</label>
+            <input type="hidden" id="customerId">
+            <label for="editFirstName">First Name:</label>
+            <input type="text" id="editFirstName">
+            <label for="editLastName">Last Name:</label>
+            <input type="text" id="editLastName">
+            <label for="editCompany">Company:</label>
+            <input type="text" id="editCompany">
+            <label for="editCountry">Country:</label>
+            <input type="text" id="editCountry">
+            <label for="editZipCity">Zip/City:</label>
+            <input type="text" id="editZipCity">
+            <label for="editAddress">Address:</label>
+            <input type="text" id="editAddress">
+            <div class="button-container">
+                <button class="save-button" onclick="saveChanges()">Save Changes</button>
+                <button class="cancel-button" onclick="closeEditModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="notice-modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+    <div id="notification" class="notification"></div>
+    <script src="/sellcars/frontend/js/customers.js"></script>
+</body>
+</html>

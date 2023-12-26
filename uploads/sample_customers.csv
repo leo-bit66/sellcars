@@ -1,0 +1,6 @@
+intnr,type,contact_persons[0].first_name,contact_persons[0].last_name,contact_persons[0].email,contact_persons[0].mobile_phone,contact_persons[0].birth_date,addresses[0].company_name,addresses[0].country,addresses[0].city,addresses[0].zip,addresses[0].fax,addresses[0].phone,addresses[0].street,addresses[0].email
+C-00002,DEALER,Bob,Johnson,bob.johnson@email.com,5556667777,1988-07-20,XYZ Motors,Canada,Toronto,M5V 1Z2,4168889999,4168889999,456 Oak St,bob.johnson@xyzmotors.com
+C-00005,PRIVATE,Alice,Walker,alice.walker@email.com,9998887777,1993-03-10,,Germany,Muenchen,83943,,,Bahnhofstr 6,exmaple@gmail.com
+C-00007,COMPANY,Charlie,Brown,charlie.brown@email.com,1112223333,1985-11-28,LMN Corp,Germany,Berlin,12345,9876543210,1112223333,789 Elm St,charlie.brown@lmncorp.com
+C-00012,DEALER,Eva,White,eva.white@email.com,4445556666,1999-09-05,PQR Motors,USA,Los Angeles,90001,4168889999,5554443333,321 Pine St,eva.white@pqrmotors.com
+C-00006,PRIVATE,Frank,Miller,frank.miller@email.com,7778889999,1980-04-15,,Argentina,Riodegenero,99383,,,Test street 67,test@kunden.de

@@ -1,0 +1,3 @@
+intnr,addresses.company_name,addresses.country,addresses.city,addresses.zip,addresses.fax,addresses.phone,addresses.street,addresses.email
+C-00005,,Germany,Berlin,12345,9876543210,2345678901,Alice Street,alice@email.com
+C-00002,XYZ Ltd,USA,San Francisco,54321,1234567890,3456789012,Bob Street,bob@email.com
